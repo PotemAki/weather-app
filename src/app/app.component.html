@@ -6,8 +6,8 @@
 
 <div class="container" *ngIf="weatherData"> 
   <div class="upper-data">
-    <img src="../assets/sunnyday.jpg" *ngIf="weatherData.current.is_day === 1">
-    <img src="../assets/night.jpg" *ngIf="weatherData.current.is_day !== 1">
+    <img src="assets/sunnyday.jpg" *ngIf="weatherData.current.is_day === 1">
+    <img src="assets/night.jpg" *ngIf="weatherData.current.is_day !== 1">
     <div class="weather-data">
       <div class="location">{{weatherData.location.name}}</div>
       <div class="temperature">{{weatherData.current.temp_c | number: '1.0-0'}}°C</div>
@@ -21,7 +21,7 @@
     <div class="more-info-container">
       <div class="info-block">
         <div class="info-block-label">
-          <img src="../assets/wind.png">
+          <img src="assets/wind.png">
           <span>Wind</span>
         </div>
         <div class="info-block-value">
@@ -31,7 +31,7 @@
       
       <div class="info-block">
         <div class="info-block-label">
-          <img src="../assets/water.png">
+          <img src="assets/water.png">
           <span>Humidity</span>
         </div>
         <div class="info-block-value">
@@ -41,7 +41,7 @@
       
       <div class="info-block-additional">
         <div class="title">
-          <img src="../assets/clock.png">
+          <img src="assets/clock.png">
         </div>
         <div class="local-time">{{weatherData.location.localtime}}</div>
         <div class="country">{{weatherData.location.country}}, {{weatherData.location.name}}</div>

@@ -8,11 +8,8 @@ import { WeatherData } from './weather.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  title(title: any) {
-   // throw new Error('Method not implemented.');
-  }
 
-  city: string = 'Warsaw';
+city: string = 'Warsaw';
  constructor (private weatherService: WeatherService) {}
 
   weatherData?: WeatherData
